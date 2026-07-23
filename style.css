@@ -1,15 +1,18 @@
+/*Backgound Style*/
 html {
  background-color: grey;
  font-size: 16px;
  font-family:Arial, Helvetica, sans-serif;
 }
-
+/*Content Styles*/
  header {
   display: flex;
   width: 100%;
   height: auto;
   font-size: 3rem;
   color: grey;
+  justify-content: center;
+  text-align: center;
   background-color: blue;
   transition: color 800ms linear 200ms, background-color 1.2s linear 200ms;
  }
@@ -17,4 +20,28 @@ html {
   header:hover {
    color: blue;
    background-color: grey;
+  }
+
+  article {
+   background-color: lightgrey;
+   font-size: 1.5rem;
+   border: 10px ridge yellow;
+  }
+
+  article .ICont {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   border: 10px groove greenyellow;
+  }
+
+  article .ImgA, article .ImgB {
+   display: flex;
+   width: 100%;
+   height: auto;
+   border: 5px solid blue;
+  }
+
+  article .ImgA:hover {
+   cursor: pointer;
+   box-shadow: 5px 5px 15px 0px rgba(30, 0, 150, 0.20);
   }
