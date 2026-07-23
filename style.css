@@ -1,0 +1,20 @@
+html {
+ background-color: grey;
+ font-size: 16px;
+ font-family:Arial, Helvetica, sans-serif;
+}
+
+ header {
+  display: flex;
+  width: 100%;
+  height: auto;
+  font-size: 3rem;
+  color: grey;
+  background-color: blue;
+  transition: color 800ms linear 200ms, background-color 1.2s linear 200ms;
+ }
+
+  header:hover {
+   color: blue;
+   background-color: grey;
+  }
