@@ -14,6 +14,9 @@ html {
   justify-content: center;
   text-align: center;
   background-color: blue;
+  margin: 0 0;
+  padding: 0 0;
+  border: 2px solid burlywood;
   transition: color 800ms linear 200ms, background-color 1.2s linear 200ms;
  }
 
@@ -44,4 +47,41 @@ html {
   article .ImgA:hover {
    cursor: pointer;
    box-shadow: 5px 5px 15px 0px rgba(30, 0, 150, 0.20);
+  }
+
+  figure {
+   border: 5px ridge grey;
+   background-color: lightblue;
+  }
+
+  figure h3 {
+   font-size: 2rem;
+   font-family:'Times New Roman', Times, serif;
+   text-align: center;
+   }
+
+  figure a {
+   font-size: 1.2rem;
+   color: blue;
+   transition: font-size 800ms ease-in 200ms, color 800ms ease-in 200ms;
+  }
+
+  figure a:hover {
+   font-size: 1.3rem;
+   color: lightblue;
+   cursor: pointer;
+  }
+
+  table {
+   border: 5px groove black;
+  }
+
+  table th {
+   font-size: 1.5rem;
+   border: 5px ridge black;
+  }
+
+  table td {
+   font-size: 1.2rem;
+   border: 3px solid black;
   }
