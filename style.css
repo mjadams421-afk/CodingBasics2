@@ -72,6 +72,19 @@ html {
    cursor: pointer;
   }
 
+  figure button {
+    box-shadow: 8px 8px 4px 4px lightgrey;
+    cursor: pointer;
+  }
+
+  figure button:hover {
+    box-shadow: 8px 8px 4px 4px lightblue;
+  }
+
+  figure button:active {
+    background-color: lightgreen;
+  }
+
   table {
    border: 5px groove black;
   }
@@ -79,9 +92,13 @@ html {
   table th {
    font-size: 1.5rem;
    border: 5px ridge black;
+   color: yellow;
+   background-color: black;
   }
 
   table td {
    font-size: 1.2rem;
    border: 3px solid black;
+   color: black;
+   background-color: white;
   }
