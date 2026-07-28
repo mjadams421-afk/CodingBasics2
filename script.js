@@ -12,7 +12,7 @@ function actionA() {
  let N = Math.round(WT1*4.44822);
  let WTRP = "";
  if(WT > 0) {
-  WTRP += WT1 + "lbs" + kg + "kg" + N + "N" + slugs + "slugs";
+  WTRP += WT1 + "lbs | " + kg + "kg | " + N + "N | " + slugs + "slugs";
  } else {
   WTRP += "Invalid weight input";
  }
@@ -33,7 +33,7 @@ function actionB() {
     let kmh = Math.round(V1*1.60934);
     let VRP = "";
     if(V > 0) {
-        VRP += V1 + "mph" + kmh + "km/h" + fts + "ft/s";
+        VRP += V1 + "mph | " + kmh + "km/h | " + fts + "ft/s";
     } else {
         VRP += "Invalid speed input";
     }
@@ -43,6 +43,7 @@ function actionB() {
 butt2.addEventListener('mousedown', actionB);
 
 //Results for variables KE
+const butt3 = document.getElementById('butt3');
 const resp3 = document.getElementById('resp3');
 let KE1 = 0;
 function actionKE() {
@@ -57,9 +58,10 @@ function actionKE() {
     resp3.innerHTML = solution;
 }
 
-resp3.addEventListener('mousedown', actionKE);
+butt3.addEventListener('mousedown', actionKE);
 
 //Results for variables Mommentum
+const butt4 = document.getElementById('butt4');
 const resp4 = document.getElementById('resp4');
 let M1 = 0;
 
@@ -75,4 +77,4 @@ function actionP() {
   resp4.innerHTML = Solution2;
 }
 
-resp4.addEventListener('mousedown', actionP);
+butt4.addEventListener('mousedown', actionP);
