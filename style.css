@@ -88,16 +88,30 @@ html {
    border: 5px groove black;
   }
 
-  table th {
+  table th #headDEc {
+    font-size: 1.7rem;
+    border: 5px groove lightgray;
+    color: lightgray;
+    background-color: darkblue;
+  }
+
+
+  table th #rowDec {
    font-size: 1.5rem;
    border: 5px ridge black;
    color: yellow;
    background-color: black;
   }
 
+
   table td {
    font-size: 1.2rem;
    border: 3px solid black;
    color: black;
    background-color: white;
+  }
+
+  table td #EXA {
+    color: lightgreen;
+    background-color: black;
   }
