@@ -1,0 +1,40 @@
+  html{
+   background-color: lightgreen;
+   font-size: 16px;
+  }
+ 
+ 
+ /*article styles*/
+   article .colors{
+    background-color: lightgray;
+    border: 10px ridge darkgray;
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: auto;
+   }
+
+   article .blue{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: blue;
+    border: 5px groove darkgray;
+   }
+
+   article .green{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: green;
+    border: 5px groove darkgray;
+   }
+
+   article .red{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: red;
+    border: 5px groove darkgray;
+   }

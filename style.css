@@ -24,7 +24,19 @@ html {
    color: blue;
    background-color: grey;
   }
+ /*Naviation*/
+ .nav li{
+  color: blue;
+  background-color: lightgray;
+  font-size: 10px;
+  display: inline;
+ }
 
+ .nav li+li::before{
+  padding: 5px;
+  content:"=>";
+ }
+ /*article*/
   article {
    background-color: lightgrey;
    font-size: 1.5rem;
