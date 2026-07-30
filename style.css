@@ -28,13 +28,13 @@ html {
  .nav li{
   color: blue;
   background-color: lightgray;
-  font-size: 10px;
+  font-size: 1.5rem;
   display: inline;
  }
 
  .nav li+li::before{
   padding: 5px;
-  content:"=>";
+  content:"<=>";
  }
  /*article*/
   article {

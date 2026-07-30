@@ -4,15 +4,31 @@
   }
  
  
- /*article styles*/
+ /*article styles colors*/
+   article a {
+    color: blue;
+    text-decoration: underline;
+   }
+
+   article a:visited {
+    color: lightblue;
+   }
+
+   article a:hover {
+    text-decoration: none;
+   }
+
+   article a:active {
+    color: red;
+   }
+
+
    article .colors{
     background-color: lightgray;
     border: 10px ridge darkgray;
     font-size: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-    height: auto;
    }
 
    article .blue{
@@ -21,6 +37,7 @@
     height: auto;
     background-color: blue;
     border: 5px groove darkgray;
+    text-align: center;
    }
 
    article .green{
@@ -29,6 +46,7 @@
     height: auto;
     background-color: green;
     border: 5px groove darkgray;
+    text-align: center;
    }
 
    article .red{
@@ -37,4 +55,118 @@
     height: auto;
     background-color: red;
     border: 5px groove darkgray;
+    text-align: center;
    }
+    /*article styles fonts*/
+   article .fonts{
+    background-color: lightgray;
+    border: 10px ridge darkgreen;
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   }
+
+   article .serif{
+    display: flex;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border: 5px solid black;
+    background-color: azure;
+    font-family: serif;
+   }
+   article .sans-serif{
+    display: flex;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border: 5px solid black;
+    background-color: azure;
+    font-family: sans-serif;
+   }
+   article .monospace{
+    display: flex;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border: 5px solid black;
+    background-color: azure;
+    font-family: monospace;
+   }
+   article .cursive{
+    display: flex;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border: 5px solid black;
+    background-color: azure;
+    font-family: cursive;
+   }
+   
+   article .fantasy{
+    display: flex;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border: 5px solid black;
+    background-color: azure;
+    font-family: fantasy;
+   }
+   article .system-ui{
+    display: flex;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border: 5px solid black;
+    background-color: azure;
+    font-family: system-ui;
+   }
+
+
+
+   /*article styles font styles*/
+   article .fStyle{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: lightblue;
+    border: 10px groove darkblue;
+    font-size: 2rem;
+   }
+
+   article .em{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color:aliceblue;
+    border: 5px solid green;
+    text-align: center;
+   }
+
+   article .strong{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color:aliceblue;
+    border: 5px solid green;
+    text-align: center;
+   }
+
+   article .italic{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color:aliceblue;
+    border: 5px solid green;
+    text-align: center;
+    font-style: italic;
+   }
+
+    article .underline{
+     display: flex;
+     width: 100%;
+     height: auto;
+     background-color:aliceblue;
+     border: 5px solid green;
+     text-align: center;
+     text-decoration: underline;
+    }
