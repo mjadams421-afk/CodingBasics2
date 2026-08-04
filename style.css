@@ -127,3 +127,38 @@ html {
     color: lightgreen;
     background-color: black;
   }
+
+  /*Footer*/
+
+  footer .MoreLinks {
+    background-color: lightgray;
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template: minmax(100px, 1fr) / 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  footer .MoreLinks LA, footer .MoreLinks LB, footer .MoreLinks LC, footer .MoreLinks LD {
+    font-size: 1.5rem;
+    color: blue;
+    transition: font-size 800ms ease-in 200ms, color 800ms ease-in 200ms;
+    border: 5px groove blue;
+    background-color: lightgray;
+    text-decoration: underline;
+  }
+
+  footer .MoreLinks LA:visited, footer .MoreLinks LB:visited, footer .MoreLinks LC:visited, footer .MoreLinks LD:visited {
+    color: lightblue;
+  }
+
+  
+  footer .MoreLinks LA:hover, footer .MoreLinks LB:hover, footer .MoreLinks LC:hover, footer .MoreLinks LD:hover {
+    color: lightgreen;
+    text-decoration: none;
+  }
+
+  footer .MoreLinks LA:active, footer .MoreLinks LB:active, footer .MoreLinks LC:active, footer .MoreLinks LD:active {
+    background-color: lightgreen;
+    color: red;
+  }
