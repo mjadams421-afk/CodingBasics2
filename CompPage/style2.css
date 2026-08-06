@@ -1,0 +1,41 @@
+html {
+ background-color: hsl(200,50%,80%);
+ font-size: 16px;
+}
+
+header {
+ display: flex;
+ width: 60%;
+ height: auto;
+ font-size: 3rem;
+ background-color: lightcoral;
+ border: 5px solid black;
+ text-align: center;
+ align-content: center;
+ justify-content: baseline;
+ font-family:'Times New Roman', Times, serif;
+}
+
+ article .cont {
+  position: relative;
+  top: 50px;
+  left: 20px;
+  display: grid;
+  grid-template: 150px 200px/1fr 1fr;
+  gap: 5px;
+ }
+
+ article .A {
+  grid-area: 1/1/span(1)/span(2);
+  border: 5px solid black;
+ }
+
+ article .B {
+  grid-area: 2/1/span(1)/span(1);
+  border: 5px solid black;
+ }
+
+ article .C {
+  grid-area: 2/2/span(1)/span(1);
+  border: 5px solid black;
+ }

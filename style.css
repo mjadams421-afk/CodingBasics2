@@ -35,6 +35,11 @@ html {
  .nav li+li::before{
   padding: 5px;
   content:"<=>";
+
+  .nav li:active {
+   color: lightgreen;
+   
+  }
  }
  /*article*/
   article {
@@ -134,9 +139,10 @@ html {
     background-color: lightgray;
     display: grid;
     width: 100%;
-    height: auto;
     grid-template: minmax(100px, 1fr) / 1fr 1fr 1fr 1fr;
     gap: 10px;
+    align-content: center;
+    justify-content: center;
   }
 
   footer .MoreLinks LA, footer .MoreLinks LB, footer .MoreLinks LC, footer .MoreLinks LD {
