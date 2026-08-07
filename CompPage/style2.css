@@ -41,6 +41,7 @@ nav {
   top: 50px;
   left: 20px;
   display: grid;
+  width: 100%;
   grid-template: repeat(4, 150px)/1fr 1fr;
   gap: 5px;
   justify-content: center;
