@@ -44,7 +44,6 @@ nav {
   width: 100%;
   grid-template: repeat(4, 150px)/1fr 1fr;
   gap: 5px;
-  justify-content: center;
   align-content: center;
   background-color: hsl(200, 95%, 65%);
   font-size: 1.5rem;
@@ -54,15 +53,18 @@ nav {
  article .A {
   grid-area: 1/1/span 2/span 2;
   border: 5px solid black;
+  align-self: center;
  }
 
  article .B {
   grid-area: 3/1/span 2/span 1;
   border: 5px solid black;
+  align-self: center;
  }
 
  article .C {
   grid-area: 3/2/span 2/span 1;
   border: 5px solid black;
+  align-self: center;
  }
 
