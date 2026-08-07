@@ -1,3 +1,39 @@
+/*mobile modifications*/
+@media only screen and (max-width: 480px) {
+ header {
+ width: 100%;
+ font-size: 1rem;
+ }
+ nav {
+ width: 20%;
+ }
+ nav img {
+  width: 50%;
+  height: auto;
+ }
+ article .cont {
+  font-size: 0.8rem;
+ }
+}
+/*laptop and tablets modifications*/
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+ header {
+ width: 100%;
+ font-size: 2rem;
+ }
+ nav {
+  width: 25%;
+ }
+ nav img {
+  width: 75%;
+  height: auto;
+ }
+ article .cont {
+  font-size: 1.2rem;
+ }
+}
+
+/*Desktops and large screens*/
 html {
  background-color: hsl(200,50%,80%);
  font-size: 16px;
