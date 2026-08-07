@@ -11,8 +11,6 @@ header {
  background-color: lightcoral;
  border: 5px solid black;
  text-align: center;
- align-content: center;
- justify-content: baseline;
  font-family:'Times New Roman', Times, serif;
 }
 
@@ -37,14 +35,10 @@ nav {
  }
 
  article .cont {
-  position: relative;
-  top: 50px;
-  left: 20px;
   display: grid;
   width: 100%;
   grid-template: repeat(4, 150px)/1fr 1fr;
   gap: 5px;
-  align-content: center;
   background-color: hsl(200, 95%, 65%);
   font-size: 1.5rem;
   border: 10px ridge black;
@@ -54,17 +48,20 @@ nav {
   grid-area: 1/1/span 2/span 2;
   border: 5px solid black;
   align-self: center;
+  justify-self: center;
  }
 
  article .B {
   grid-area: 3/1/span 2/span 1;
   border: 5px solid black;
   align-self: center;
+  justify-self: center;
  }
 
  article .C {
   grid-area: 3/2/span 2/span 1;
   border: 5px solid black;
   align-self: center;
+  justify-self: center;
  }
 
