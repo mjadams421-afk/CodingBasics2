@@ -47,21 +47,22 @@ nav {
  article .A {
   grid-area: 1/1/span 2/span 2;
   border: 5px solid black;
-  align-self: center;
-  justify-self: center;
+  align-self: stretch;
+  justify-self: stretch;
  }
 
  article .B {
   grid-area: 3/1/span 2/span 1;
   border: 5px solid black;
-  align-self: center;
-  justify-self: center;
+  align-self: stretch;
+  justify-self: stretch;
  }
+ 
 
  article .C {
   grid-area: 3/2/span 2/span 1;
   border: 5px solid black;
-  align-self: center;
-  justify-self: center;
+  align-self: stretch;
+  justify-self: stretch;
  }
 
