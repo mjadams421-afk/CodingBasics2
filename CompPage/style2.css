@@ -16,6 +16,24 @@ header {
  font-family:'Times New Roman', Times, serif;
 }
 
+nav {
+ display: inline-flex;
+ width: 20%;
+ height: auto;
+ position: fixed;
+ top: 0px;
+ right: 0px;
+ text-align: end;
+ background-color: hsl(200, 55%, 55%);
+ border: 5px solid black;
+}
+
+ article {
+  background-color: hsl(200, 95%, 65%);
+  font-size: 1.5rem;
+  border: 10px ridge black;
+ }
+
  article .cont {
   position: relative;
   top: 50px;
@@ -23,6 +41,8 @@ header {
   display: grid;
   grid-template: 150px 200px/1fr 1fr;
   gap: 5px;
+  justify-content: center;
+  align-content: center;
  }
 
  article .A {
@@ -39,3 +59,4 @@ header {
   grid-area: 2/2/span(1)/span(1);
   border: 5px solid black;
  }
+
