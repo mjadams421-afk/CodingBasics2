@@ -168,3 +168,28 @@ html {
     background-color: lightgreen;
     color: red;
   }
+
+  @keyframes move {
+    0% {transform: translate(10%, 10%);
+        scale: 1;
+    }
+    50% {transform: translate(50%, 50%);
+        scale: 1.5;
+    }
+    100% {transform: translate(100%,60%);
+        scale: 1.7;
+    }
+  }
+
+
+  figure.anim {
+    display: inline-flex;
+    color: black;
+    background-color: lightblue;
+  }
+
+  figure .anim:active {
+    animation: move 3s ease-in 200ms infinite alternate;
+    color: lightblue;
+    background-color: black;
+  }
