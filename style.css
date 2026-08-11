@@ -186,6 +186,9 @@ html {
     display: inline-flex;
     color: black;
     background-color: lightblue;
+    width: 10%;
+    height: auto;
+    border: 5px solid black;
   }
 
   figure .anim:active {
