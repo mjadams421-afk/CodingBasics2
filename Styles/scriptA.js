@@ -4,10 +4,10 @@ const RespA = document.getElementById('RespA');
 
 //function
 
-  const Date = new Date();
-  let Y = Date.getFullYear();
-  let M = Date.getMonth() + 1;
-  let D = Date.getDate();
+  const today = new Date();
+  let Y = today.getFullYear();
+  let M = today.getMonth() + 1;
+  let D = today.getDate();
   let line = "";
   let hScore = 0;
   let cScore = 0;

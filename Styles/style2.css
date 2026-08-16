@@ -184,18 +184,18 @@
       font-family:Verdana, Geneva, Tahoma, sans-serif;
     }
 
-    figure #ButA{
+    figure #activateA{
       background-color: lightblue;
       border: 2px solid black;
       font-size: 1.5rem;
       transition: background-color 1s linear 200ms;
     }
 
-    figure #ButA:hover{
+    figure #activateA:hover{
       background-color: lightgreen;
     }
 
-    figure #ButA:active{
+    figure #activateA:active{
       background-color: darkblue;
     }
 
