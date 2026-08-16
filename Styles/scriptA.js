@@ -1,6 +1,7 @@
 //Variables from html DOM
 const activateA = document.getElementById('activateA');
 const RespA = document.getElementById('RespA');
+RespA.innerHTML = "test";
 
 //function
 
