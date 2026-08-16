@@ -1,6 +1,6 @@
 //Variables from html DOM
-const button = document.getElementById('ButA');
-const response = document.getElementById('RespA');
+const activateA = document.getElementById('activateA');
+const RespA = document.getElementById('RespA');
 
 //function
 
@@ -17,11 +17,8 @@ function getResp() {
   let user = window.prompt("pick a number between 1 and 10");
   let comp = Math.floor(Math.random()*10)+1;
   let targ = Math.floor(Math.random()*10)+1;
-  if(user === targ){
-    hScore++;
-  }
   line += "Hello" + " " + name + " , " + "as of " + M + "/" + D + "/" + Y + " you are " + age + " years old.";
-  response.innerHTML = line;
+  RespA.innerHTML = line;
 }
 
-button.addEventListener('click', getResp);
+activateA.addEventListener('click', getResp);
