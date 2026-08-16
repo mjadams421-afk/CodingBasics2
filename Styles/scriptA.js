@@ -24,4 +24,4 @@ function getResp() {
   response.innerHTML = line;
 }
 
-button.addEventListener('mousedown', getResp);
+button.addEventListener('click', getResp);
