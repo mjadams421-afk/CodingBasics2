@@ -172,7 +172,8 @@
     }
 
     figure .actionA{
-      display: flex;
+      display: inline-flex;
+      flex-flow: column wrap;
       width: 100%;
       height: auto;
       background-color: lightgray;
@@ -183,6 +184,7 @@
       font-size: 2rem;
       font-family:Verdana, Geneva, Tahoma, sans-serif;
     }
+
 
     figure #activateA{
       background-color: lightblue;
@@ -199,3 +201,8 @@
       background-color: darkblue;
     }
 
+    figure #RespA, figure #RespB{
+      background-color: lightblue;
+      border: 2px solid black;
+      font-size: 1.5rem;
+    }
