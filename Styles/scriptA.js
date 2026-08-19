@@ -1,4 +1,4 @@
-// Variables from html DOM
+// Variables from html DOM action A
 const activateA = document.getElementById('activateA');
 const RespA = document.getElementById('RespA');
 const RespB = document.getElementById('RespB');
@@ -45,3 +45,37 @@ function getResp() {
 }
 
 activateA.addEventListener('click', getResp);
+
+// Variables from html DOM Action B
+const activateB = document.getElementById('activateB');
+const RespC = document.getElementById('RespC');
+
+
+let comp = [];
+let setA = [];
+let same = [];
+
+function getRespB() {
+ let X = window.prompt("Pick a number between 1 and 10");
+ let Y = window.prompt("Pick a number between 1 and 10");
+ let Z = window.prompt("Pick a number between 1 and 10");
+ setA.push(X, Y, Z);
+ let dispSetA = setA.join(", ");
+ let A = Math.floor(Math.random() * 10) + 1;
+ let B = Math.floor(Math.random() * 10) + 1;
+ let C = Math.floor(Math.random() * 10) + 1;
+ comp.push(A, B, C);
+ let dispComp = comp.join(", ");
+  for(let i = 0; i < setA.length; i++){
+    for(let j = 0; j < comp.length; j++){
+       if(setA[i] === comp[j]){
+         same.push(setA[i]);
+       }
+    }
+
+}
+let dispSame = same.join(", ");
+RespC.innerHTML = `Your numbers are: ${dispSetA}. Computer numbers are: ${dispComp}. The matching numbers are: ${dispSame}.`;
+}
+
+activateB.addEventListener('click', getRespB);
