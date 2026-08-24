@@ -79,3 +79,27 @@ RespC.innerHTML = `Your numbers are: ${dispSetA}. Computer numbers are: ${dispCo
 }
 
 activateB.addEventListener('click', getRespB);
+
+//Variables from html DOM Action C
+const activateC = document.getElementById('activateC');
+const RespD = document.getElementById('RespD');
+
+let phrase = " ";
+function getWords() {
+  let verb = window.prompt("Please enter a verb");
+  let adVerb = window.prompt("Please enter an adverb");
+  let noun = window.prompt("Please enter a noun");
+  let adJect = window.prompt("Please enter an adjective");
+  let words = [verb, adVerb, noun, adJect];
+  let wordsDisp = words.join(", ");
+  if (words.length >= 4) {
+    phrase += `The fox ran throught the Forest. On the fox's way he ran into a ${adJect} tree while moving ${adVerb}. 
+    The fox always knew that he should mark his territory on a ${noun}. However, this time he had to move because a rabbit was ${verb}ing away.
+     | The words you entered are: ${wordsDisp}.`;
+  } else {
+    phrase += `Please enter all four words.`;
+  }
+  RespD.innerHTML = phrase;
+}
+
+activateC.addEventListener('click', getWords);

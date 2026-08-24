@@ -171,7 +171,7 @@
      text-decoration: underline;
     }
 
-    figure .actionA, figure .actionB{
+    figure .actionA, figure .actionB, figure .actionC{
       display: inline-flex;
       flex-flow: column wrap;
       width: 100%;
