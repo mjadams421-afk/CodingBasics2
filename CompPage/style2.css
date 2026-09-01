@@ -93,6 +93,26 @@ nav {
   align-self: stretch;
   justify-self: stretch;
  }
+
+ article .B button {
+  display: flex;
+  width: 50%;
+  height: auto;
+  border: 5px solid black;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+ }
+
+ article .B p {
+   font-size: 1.8rem;
+   font-style: bold;
+   font-family: arial, sans-serif;
+   text-decoration: underline;
+   text-align: center;
+   align-self: center;
+   justify-self: center;
+ }
  
 
  article .C {
