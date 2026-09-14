@@ -2,7 +2,7 @@
 const actionClick = document.getElementById("actionClick")
 const answer = document.getElementById("answer");
 
-values = [];
+let values = [];
 let response = "";
 
 //function for adding numbers in a sentence
