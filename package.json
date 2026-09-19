@@ -1,7 +1,10 @@
 {
   "name": "codingbasics2",
   "version": "1.0.0",
-  "description": "",
+  "description": "testing",
+  "keywords": [
+    "test"
+  ],
   "homepage": "https://github.com/mjadams421-afk/CodingBasics2#readme",
   "bugs": {
     "url": "https://github.com/mjadams421-afk/CodingBasics2/issues"
@@ -11,10 +14,13 @@
     "url": "git+https://github.com/mjadams421-afk/CodingBasics2.git"
   },
   "license": "ISC",
-  "author": "",
+  "author": "MA",
   "type": "commonjs",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^12.0.2"
   }
 }
