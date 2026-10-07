@@ -26,21 +26,27 @@ html {
   }
  /*Naviation*/
  .nav li{
-  color: blue;
-  background-color: lightgray;
-  font-size: 1.5rem;
+  color: black;
+  background-color: yellow;
+  font-size: 2rem;
   display: inline;
  }
 
  .nav li+li::before{
   padding: 5px;
   content:"<=>";
+ }
+  .nav li+li::after{
+    padding: 5px;
+    content:">=<"
+  }
 
   .nav li:active {
    color: lightgreen;
-   
+  
   }
- }
+
+ 
  /*article*/
   article {
    background-color: lightgrey;
