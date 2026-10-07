@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React,{useState} from 'react'
 import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
@@ -6,7 +6,8 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  const [musicStyles, setMusicStyles] = useState(['Rock', 'Pop', 'Jazz', 'Classical', 'Hip Hop']);
+  function handleClick(e){ setMusicStyles([...musicStyles, e.target.value])}
   return (
     <>
       <section id="center">
@@ -28,6 +29,17 @@ function App() {
         >
           Music count: {count}
         </button>
+        <form>
+          <label for="music">Select your music</label>
+          <input id="music" name="music" list="music-styles" />
+          <datalist id="music-styles">
+            {musicStyles.map((style, index) => (
+              <option key={index} value={style} />
+            ))}
+          </datalist>
+          <button type="button" value="Electronic" onClick={handleClick}>Add Electronic</button>
+          <button type="button" value="Country" onClick={handleClick}>Add Country</button>
+        </form>
       </section>
 
       <div className="ticks"></div>
